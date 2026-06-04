@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    data = pd.read_csv("data.csv")
+   data = pd.read_csv("Titanic-Dataset.csv")
     return f"Rows in dataset: {len(data)}"
 
 if __name__ == "__main__":
